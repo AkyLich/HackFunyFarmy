@@ -16,7 +16,7 @@ void NOP(void* addr, size_t bytes) {
 	VirtualProtect(addr, bytes, prot, &prot);
 }
 
-bool infinityWater = true;
+bool infinityWater = false;
 
 BOOL WINAPI mainThread(HMODULE hModule) {
 	while (!GetAsyncKeyState(VK_END)) {
