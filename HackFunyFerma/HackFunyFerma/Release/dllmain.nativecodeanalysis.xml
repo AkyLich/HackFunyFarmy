@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\hackfunyferma\hackfunyferma</FILEPATH>
+      <FILENAME>dllmain.cpp</FILENAME>
+      <LINE>49</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"Temp_value_#225" может быть равен "0":  это не соответствует спецификации функции "CloseHandle". </DESCRIPTION>
+    <FUNCTION>DllMain</FUNCTION>
+    <DECORATED>DllMain@12</DECORATED>
+    <FUNCLINE>40</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\hackfunyferma\hackfunyferma</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>45</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Предполагается, что параметр ("ul_reason_for_call") разрешается в case 1: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\hackfunyferma\hackfunyferma</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>47</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\hackfunyferma\hackfunyferma</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>48</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\hackfunyferma\hackfunyferma</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>49</LINE>
+        <COLUMN>13</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"&lt;символ&gt;" получает возвращаемое значение из "CreateThread" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\processthreadsapi.h:170)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\hackfunyferma\hackfunyferma</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>49</LINE>
+        <COLUMN>13</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"Temp_value_#225" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "CloseHandle"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
